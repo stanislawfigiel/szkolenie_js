@@ -9,5 +9,9 @@
     "mocha": "^6.2.0",
     "nyc": "^14.1.1",
     "sinon": "^7.4.1"
+  },
+  "dependencies": {
+    "cowsay": "^1.4.0",
+    "lolcat": "^1.0.0"
   }
 }
