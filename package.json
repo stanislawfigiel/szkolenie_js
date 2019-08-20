@@ -2,7 +2,8 @@
   "scripts": {
     "test": "mocha test",
     "test:coverage": "nyc npm test",
-    "test:test1": "nyc node demo.js"
+    "test:test1": "nyc node demo.js",
+    "success": "cowsay 'gra gitara'"
   },
   "devDependencies": {
     "mocha": "^6.2.0",
