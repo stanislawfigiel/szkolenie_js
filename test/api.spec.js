@@ -4,6 +4,7 @@ const chai = require('chai')
 const expect = chai.expect
 const assert = chai.assert
 
+
 describe('API HTTP Requests', () => {
     before(() => {
         global.fetch = require('node-fetch')
@@ -14,6 +15,7 @@ describe('API HTTP Requests', () => {
         delete global.fetch
     })
 
+/*
     it('should rerceive geo data from REST API @integration', async () => {
         const response = await fetchGeo()
         expect(typeof response).to.equal("object")
@@ -27,6 +29,7 @@ describe('API HTTP Requests', () => {
         const response = await fetchOffices()
         expect(response instanceof Array).to.be.true
     })
+*/
 
     /**
      {
@@ -45,11 +48,11 @@ describe('API HTTP Requests', () => {
      ]
      */
 
-    it('should merge geo and office data', async () => {
+  /*  it('should merge geo and office data', async () => {
         const response = await fetchGeoWithOffices()
         expect(typeof response).to.equal("object")
         expect(typeof response.US).to.equal("object")
         expect(response.US.country).to.equal("United States of America")
         expect(response.US.offices.length).to.equal(3)
-    })
+    })*/
 })
